@@ -1,0 +1,13 @@
+{
+    "navbar": {
+        "about": "Hakkında",
+        "contact": "İletişim"
+    },
+    "home": {
+        "title": {
+            "main": "Ana Sayfa",
+            "sub1": "Ana Sayfaya hoş geldiniz",
+            "sub2": "Dili değiştirin ve değişimi görün"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "navbar": {
+        "about": "About",
+        "contact": "Contact"
+    },
+    "home": {
+        "title": {
+            "main": "Home",
+            "sub1": "Welcome to the Home page",
+            "sub2": "Toogle language and see the difference"
+        }
+    }
+}
