@@ -3,7 +3,7 @@ import getLanguageFile from '../utils/getLanguageFile';
 import setInitialLanguage from '../utils/setInitialLanguage';
 
 
-export default function useTranslation(setLang) {
+export default function useTranslation() {
     // declare initial states
     const [{ language, strings }, setLanguage] = useState({
         language: setInitialLanguage(),
@@ -21,6 +21,7 @@ export default function useTranslation(setLang) {
                 language: newLanguage,
                 strings: fetchedStrings
             });
+            // save the new language to localStorage
             localStorage.setItem("currentLang", newLanguage);
         }, [language]);
 
@@ -39,7 +40,7 @@ export default function useTranslation(setLang) {
         // return value or chained keys if malformed
         return result || translation
     };
-    console.log("hook rerenders", language, strings)
+    // console.log("hook rerenders", language, strings)
     useEffect(() => {
         updateLanguage(language)
     }, [language, updateLanguage])

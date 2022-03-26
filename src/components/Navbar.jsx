@@ -13,9 +13,9 @@ export default function Navbar() {
             <div>{t("navbar.contact")}</div>
 
             <select value={language} onChange={(e) => updateLanguage(e.target.value)}>
-                <option value="en">ENGLISH</option>
-                <option value="tr">TURKISH</option>
+                <option value="en">English</option>
+                <option value="tr">Turkish</option>
             </select>
         </div>
     )
-}
+};
